@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="../styles/resets.css">
+        <link rel="stylesheet" href="../styles/base.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/form.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>1
+        </header>
+        <main>
+            <section id="app">
+                <header class = "header">
+                    <h1>Reservation Your City</h1>
+                </header>
+                <div id = "travel-form">
+                    <section class ="location">
+                        <label for="country">What Country?</label>
+                        <input type="text" id="country" placeholder="Enter Country.Ex: USA, Enter State"/>
+                    </section>
+                    <section class ="date-section">
+                        <label for="date">When are you leaving?</label>
+                        <input type="date" class="date-leave"/>
+                    </section>
+                    <section class ="date-section">
+                        <label for="date">When are you coming back?</label>
+                        <input type="date" class="date-back"/>
+                    </section>
+                    <section class ="btnCont">
+                        <button
+                            id="getInfo"
+                            type = "submit"> Get Info! </button>
+                    </section>
+                </div>
+                <section class = "response-section hide">
+                    <div class="image-container">
+                        <img class = "loaction-image" src = "">
+                    </div>
+                    <div class="trip-info">
+                        <h2 class = "title">Your Travel Information</h2>
+                        <div class = "location"></div>
+                        <div class = "date-reservation"></div>
+                        <h2>Weather Forcast</h2>
+                        <div class = "weather-status"></div>
+                        <div class = "weather-temp"></div>
+                        <button id = "reload" onclick = "">
+                            Try a different location
+                        </button>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>

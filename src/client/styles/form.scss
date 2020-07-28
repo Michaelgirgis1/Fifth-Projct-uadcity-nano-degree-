@@ -1,0 +1,45 @@
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+.response-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #f1c2c2;
+    padding: 25px;
+    .location{
+        margin-bottom: 6px;
+    }
+    .loaction-image {
+        width: 100%;
+    }
+    .image-container {
+        margin-right: 25px;
+    }
+    h2{
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .title{
+
+        margin-bottom: 20px;
+    }
+     .date-reservation{
+         margin-bottom: 20px;
+      }
+      .reload{
+          margin-top: 20px;
+      }
+.weather-temp{
+    margin-bottom: 20px;
+}
+}
