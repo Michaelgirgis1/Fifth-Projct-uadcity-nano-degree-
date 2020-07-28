@@ -1,5 +1,5 @@
 
-
+import { formValidation } from './formValidation'
 
 // Personal API Key for OpenWeatherMap API
 let baseURL = 'http://api.geonames.org/searchJSON?q='
@@ -12,13 +12,12 @@ let imageApi = 'https://pixabay.com/api/?key='
 let pixKey = '17657024-de71bcfb4648e9a612f88a9cd&q='
 
 // Event listener to add function to existing HTML DOM element
-document.getElementById('getInfo').addEventListener('click', performAction);
+document.getElementById('getInfo').addEventListener('click', formValidation);
 
 
 /* Function called by event listener */
-function performAction(e){
 
-  e.preventDefault()
+function performAction(){
   let long,
   lat,
   weatherData;
